@@ -1,0 +1,15 @@
+body {
+  display: flexbox;
+  width: 400px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+fieldset {
+  margin-top: 20px;
+  border-color: lightgrey;
+  border-style: solid;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}

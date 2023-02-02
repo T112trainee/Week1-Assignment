@@ -1,0 +1,80 @@
+body{
+  margin: 0 auto ;
+  width: 100vw;
+  height: 100vh;
+
+}
+section{
+  margin: 1em;
+  padding: 2em;
+
+}
+
+#green {
+  background-color: #baffc9;
+
+}
+
+#orange {
+  background-color: #ffdfba;
+}
+
+#yellow {
+  background-color:   #ffffba;
+
+}
+
+#red {
+  background-color:   #ffb3ba;
+  
+}
+
+#blue {
+  background-color:   #bae1ff;
+  display: flex;
+  
+  flex: auto;
+  
+}
+
+li {
+  background-color: white;
+  padding: 1em;
+  padding-right: 10em;
+  margin: 1em;
+  display: flex;
+
+  
+} 
+ul { 
+  padding: 0;
+
+}
+
+.container{
+  display: flex;
+}
+
+.three{
+  display: flex;  
+}
+.div-yellow-red{
+  display: flex;
+}
+
+.div-orange{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.div-blue{
+  display: flex;
+  flex: auto;
+  
+}
+
+
+
+
+

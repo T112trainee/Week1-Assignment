@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stack over flow</title>
+    <link rel="stylesheet" href="question2.css" />
+  </head>
+  <body>
+    <div id="head">
+      How to force child div to be 100% of parent div's height without
+      specifying parent's height?
+    </div>
+    <div class="wrap">
+      <span>Asked</span>
+      <span>13 years,5 monts ago</span>
+      <span>Modified 2 months ago</span>
+      <span>Viwed 1.3m times</span>
+    </div>
+    <div class="sidebar">
+      <div class="icons">
+        <img class="up-arrow" src="icons/uparrow.png" />
+        <span class="number">697</span>
+        <img class="down-arrow" src="icons/downarrow.png" />
+        <img class="save-icon" src="icons/save-icon.png" />
+        <img class="time-logo" src="icons/time-logo.jpg" />
+      </div>
+    </div>
+    <p>I have a site with the following structure:</p>
+
+    <pre
+      class="lang-html s-code-block"
+    ><code class="hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"header"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"main"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navigation"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"content"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"footer"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  </code></pre>
+
+    <p>
+      The navigation is on the left and the content div is on the right. The
+      information for the content div is pulled in through PHP, so it's
+      different every time.
+    </p>
+    <p>
+      How can I scale the navigation vertically so that its height is the same
+      as the content div's height, no matter which page is loaded?
+    </p>
+
+    <div class="buttons">
+      <button type="buttpn">html</button>
+      <button type="buttpn">css</button>
+    </div>
+
+    <div class="container">
+      <div>
+        <span>Share</span>
+        <span>improve this question</span>
+        <span>Follow</span>
+      </div>
+      <div style="color: blue">
+        <span>edited jan 3, 2019 at 20:20</span>
+        <img class="author" src="icons/author.jpg" />
+        <span>TylorH</span>
+        <span>20.4k .61 .75 .95</span>
+      </div>
+      <div>
+        <span>askedjul 13,2009 1t 22:14</span>
+        <span>user137726</span>
+      </div>
+    </div>
+
+    <span style="display: block" class="comment-copy"
+      >2 Use display table on parent and display table-cell on child. This will
+      make child as long as the parent is. See
+      <a href="http://stackoverflow.com/q/22712489/3429430"
+        >stackoverflow.com/q/22712489/3429430</a
+      ></span
+    >
+    <span class="comment-copy"
+      >12 You can just set <code>display: flex; align-items: stretch;</code> for
+      the div#main. And <b>don't</b> use <code>height: 100%</code> for
+      div#content</span
+    >
+  </body>
+</html>
